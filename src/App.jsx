@@ -16,6 +16,9 @@ function App() {
     setPaso(1);
   };
   const handleInputChange = (e) => {
+    if(isNaN(e.target.value)){
+      return;
+    }
     setPaso(Number(e.target.value));
   };
 
